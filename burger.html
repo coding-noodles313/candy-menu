@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Burger Menu Delight</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Header section with a full-screen background image */
+    header {
+      background: url('https://source.unsplash.com/1600x900/?burger') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+    /* Navigation bar */
+    nav {
+      background: #333;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1em;
+      font-size: 1.2em;
+    }
+    /* Section styling */
+    section {
+      max-width: 1200px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 1em;
+      color: #444;
+    }
+    /* Burger menu grid */
+    .burger-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+    .burger-item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .burger-item:hover {
+      transform: translateY(-10px);
+    }
+    .burger-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .burger-item .content {
+      padding: 1em;
+    }
+    .burger-item h3 {
+      margin-top: 0;
+    }
+    /* Footer styling */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Burger Menu Delight</h1>
+  </header>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="menu">
+    <h2>Our Delicious Burgers</h2>
+    <div class="burger-list">
+      <div class="burger-item">
+        <img src="https://source.unsplash.com/300x200/?cheeseburger" alt="Classic Cheeseburger">
+        <div class="content">
+          <h3>Classic Cheeseburger</h3>
+          <p>Beef patty, cheddar cheese, lettuce, tomato, pickles, and house sauce.</p>
+        </div>
+      </div>
+      <div class="burger-item">
+        <img src="https://source.unsplash.com/300x200/?bacon-burger" alt="BBQ Bacon Burger">
+        <div class="content">
+          <h3>BBQ Bacon Burger</h3>
+          <p>Beef patty, crispy bacon, smoked BBQ sauce, cheddar cheese, and onion rings.</p>
+        </div>
+      </div>
+      <div class="burger-item">
+        <img src="https://source.unsplash.com/300x200/?spicy-burger" alt="Spicy Jalapeño Burger">
+        <div class="content">
+          <h3>Spicy Jalapeño Burger</h3>
+          <p>Beef patty, pepper jack cheese, jalapeños, chipotle mayo, and lettuce.</p>
+        </div>
+      </div>
+      <div class="burger-item">
+        <img src="https://source.unsplash.com/300x200/?mushroom-burger" alt="Mushroom Swiss Burger">
+        <div class="content">
+          <h3>Mushroom Swiss Burger</h3>
+          <p>Beef patty, Swiss cheese, sautéed mushrooms, and garlic aioli.</p>
+        </div>
+      </div>
+      <div class="burger-item">
+        <img src="https://source.unsplash.com/300x200/?veggie-burger" alt="Veggie Burger">
+        <div class="content">
+          <h3>Veggie Burger</h3>
+          <p>Grilled plant-based patty, avocado, lettuce, tomato, and vegan mayo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center;">Welcome to Burger Menu Delight, where every burger is crafted with passion and the freshest ingredients. Our commitment is to serve you the best taste in town!</p>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align: center;">Get in touch: email us at <a href="mailto:contact@burgermenudelight.com">contact@burgermenudelight.com</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Burger Menu Delight. All rights reserved.</p>
+  </footer>
+</body>
+</html>
